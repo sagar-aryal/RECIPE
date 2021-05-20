@@ -15,6 +15,10 @@ html {
   border-radius: 50%;
 }
 
+.nav-link {
+  color: white;
+}
+
 /* Main Styling */
 
 .main {
@@ -169,6 +173,9 @@ img {
 .ingredients,
 .instructions {
   padding: 20px;
+}
+.ingredients ul li {
+  margin-left: 20px;
 }
 .instructions {
   width: 100%;

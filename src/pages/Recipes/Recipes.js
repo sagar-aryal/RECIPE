@@ -17,6 +17,14 @@ const Recipes = () => {
     });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://nameless-brushlands-31685.herokuapp.com/recipes")
+      .then((response) => {
+        setRecipes(response.data);
+      });
+  }, []);
+
   const handleChange = (e) => {
     setSearch(e.target.value);
   };

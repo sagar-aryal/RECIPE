@@ -1,49 +1,47 @@
-import React, { Component } from "react";
+import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Food from "../../assets/home.jpg";
 
-class Header extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar
-          className="header"
-          collapseOnSelect
-          expand="sm"
-          bg="primary"
-          variant="dark"
-          fixed="top"
+const Header = () => {
+  return (
+    <div>
+      <Navbar
+        className="header"
+        collapseOnSelect
+        expand="sm"
+        bg="primary"
+        variant="dark"
+        fixed="top"
+      >
+        <Navbar.Brand href="/recipe">
+          <h1>
+            RECIPES <img src={Food} alt="about" />
+          </h1>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end"
         >
-          <Navbar.Brand href="/">
-            <h1>
-              RECIPES <img src={Food} alt="about" />
-            </h1>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse
-            id="responsive-navbar-nav"
-            className="justify-content-end"
-          >
-            <Nav>
-              <Nav.Link exact="true" href="/">
-                <i className="fas fa-home"></i> Home
-              </Nav.Link>
-              <Nav.Link href="/about">
-                {" "}
-                <i className="fas fa-address-book"></i> About
-              </Nav.Link>
-              <Nav.Link href="/recipes">
-                <i className="fas fa-utensils"></i> Recipes
-              </Nav.Link>
-              <Nav.Link href="/create">
-                <i className="fab fa-wpforms"></i> Create
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-    );
-  }
-}
+          <Nav>
+            <Link className="nav-link" exact="true" to="/recipe">
+              <i className="fas fa-home"></i> Home
+            </Link>
+            <Link className="nav-link" to="/about">
+              <i className="fas fa-address-book"></i> About
+            </Link>
+            <Link className="nav-link" to="/recipes">
+              <i className="fas fa-utensils"></i> Recipes
+            </Link>
+            <Link className="nav-link" to="/create">
+              <i className="fab fa-wpforms"></i> Create
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
+  );
+};
 
 export default Header;

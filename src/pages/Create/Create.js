@@ -17,9 +17,14 @@ const Create = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/recipes", newRecipe)
+      .post(
+        "https://nameless-brushlands-31685.herokuapp.com/recipes",
+        newRecipe
+      )
       .then(() => {
-        return axios.get("http://localhost:3001/recipes");
+        return axios.get(
+          "https://nameless-brushlands-31685.herokuapp.com/recipes"
+        );
       })
       .then((response) => setNewRecipe(response.data));
     e.target.reset();

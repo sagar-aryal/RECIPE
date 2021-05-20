@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
 const RecipeDetails = ({ link, name, image }) => {
-  const { url } = useRouteMatch();
+  const { path } = useRouteMatch();
   return (
     <div className="card">
       <img src={image} alt={name} />
@@ -10,7 +10,7 @@ const RecipeDetails = ({ link, name, image }) => {
       <b>{name}</b>
 
       <hr />
-      <Link to={`${url}/${link}`} className="button">
+      <Link to={`${path}/${link}`} className="button">
         See Details
       </Link>
     </div>

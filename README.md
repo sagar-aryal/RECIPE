@@ -28,3 +28,4 @@ To run in your local device please install the following dependencies before run
 - npm install json-server --save-dev
 - npm install axios
 - npm install react-bootstrap bootstrap
+- npm install react-player

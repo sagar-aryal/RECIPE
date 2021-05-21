@@ -15,5 +15,16 @@ This is my final project for my course React which was organised by Helsinki Bus
 ## Technologies used
 
 - React
-- Css
+- JSX
+- CSS
+- React-Bootstrap
+- PHP
 - Symfony
+
+## Instruction
+To run in your local device please install the following dependencies before running the project.
+- npm install
+- npm install react-router-dom
+- npm install json-server --save-dev
+- npm install axios
+- npm install react-bootstrap bootstrap

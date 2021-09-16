@@ -1,5 +1,4 @@
-# recipe
-
+# RECIPE
 ## Description
 
 This is the repository for my course REACT BASICS which was organised by Helsinki Business Collage.This is the final assignment given during the end of course period.

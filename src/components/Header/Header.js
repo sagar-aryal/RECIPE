@@ -14,9 +14,11 @@ const Header = () => {
         variant="dark"
         fixed="top"
       >
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <h1>
-            RECIPES <img src={Food} alt="about" />
+            <Link to="/">
+              <img src={Food} alt="about" />
+            </Link>
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

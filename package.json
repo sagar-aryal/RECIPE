@@ -2,7 +2,7 @@
   "name": "recipes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sagar-aryal.github.io/recipe",
+  "homepage": "http://sagar-aryal.github.io/RECIPE",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",

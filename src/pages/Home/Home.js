@@ -8,7 +8,7 @@ const Home = () => {
       <div className="caption">
         <h2>Nothing Brings You Together Like Good Food</h2>
         <h3>Explore your choices</h3>
-        <Link className="btn" to="/recipes">
+        <Link to="/recipes" className="btn">
           Explore
         </Link>
       </div>

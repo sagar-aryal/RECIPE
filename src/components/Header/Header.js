@@ -14,7 +14,7 @@ const Header = () => {
         variant="dark"
         fixed="top"
       >
-        <Navbar.Brand href="/recipe">
+        <Navbar.Brand href="/">
           <h1>
             RECIPES <img src={Food} alt="about" />
           </h1>
@@ -25,7 +25,7 @@ const Header = () => {
           className="justify-content-end"
         >
           <Nav>
-            <Link className="nav-link" exact="true" to="/recipe">
+            <Link className="nav-link" to="/">
               <i className="fas fa-home"></i> Home
             </Link>
             <Link className="nav-link" to="/about">

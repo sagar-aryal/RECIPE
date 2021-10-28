@@ -1,4 +1,4 @@
-# REACT21K_React
+# REACT21K-RECIPE
 
 ## Description
 
@@ -10,7 +10,7 @@ This is my final project for my course React which was organised by Helsinki Bus
 
 ## Description
 
-[LINK TO THE PROJECT](https://sagar-aryal.github.io/recipe/)
+[LINK TO THE PROJECT](https://sagar-aryal.github.io/RECIPE/)
 
 ## Technologies used
 

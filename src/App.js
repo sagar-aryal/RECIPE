@@ -1,18 +1,18 @@
 import "./App.css";
-import { HashRouter } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <HashRouter basename="/">
+      <BrowserRouter>
         <Header />
         <Main />
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
